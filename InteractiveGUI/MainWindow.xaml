@@ -1,0 +1,26 @@
+﻿<Window x:Class="InteractiveGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InteractiveGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="Firstnametb" HorizontalAlignment="Left" Height="23" Margin="277,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsEnabled="False" TextChanged="TextChange_Firstname" />
+        <TextBox Name="Lastnametb" HorizontalAlignment="Left" Height="23" Margin="277,179,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsEnabled="False" TextChanged="TextChange_LastName"/>
+        <TextBox Name="Agetb" HorizontalAlignment="Left" Height="23" Margin="277,238,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsEnabled="False" TextChanged="TextChange_Age"/>
+        <TextBox Name="Teletb" HorizontalAlignment="Left" Height="23" Margin="277,300,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsEnabled="False" TextChanged="TextChanged_Tele"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="163,175,0,0" VerticalAlignment="Top"/>
+        <Label Content="Age" HorizontalAlignment="Left" Margin="163,238,0,0" VerticalAlignment="Top"/>
+        <Label Content="TelephoneNumber" HorizontalAlignment="Left" Margin="163,300,0,0" VerticalAlignment="Top"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="163,109,0,0" VerticalAlignment="Top"/>
+        <Button Name="New_Person" Content="New Person" HorizontalAlignment="Left" Margin="499,117,0,0" VerticalAlignment="Top" Width="75" IsEnabled="true" Click="btn_NewPerson"/>
+        <Button Name="Delete_Person" Content="Delete Person" HorizontalAlignment="Left" Margin="499,179,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="btn_DeletePerson" />
+        <Button Name="Up" Content="Up" HorizontalAlignment="Left" Margin="499,237,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="btn_Up"/>
+        <Button Name="Down" Content="Down" HorizontalAlignment="Left" Margin="499,299,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="btn_Down"/>
+        <TextBlock Name="Person_Count" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="163,45,0,0"><Run Text="Person Count: 0"/></TextBlock>
+        <TextBlock Name="Index" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Index: -1" VerticalAlignment="Top" Margin="348,48,0,0" />
+
+    </Grid>
+</Window>
